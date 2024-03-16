@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">ProDriver</string>
     <string name="splash_screen">Splash Screen</string>
+    <string name="Login_Btn">Login</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
 </resources>
