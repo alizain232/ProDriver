@@ -4,4 +4,18 @@
     <string name="Login_Btn">Login</string>
     <string name="password">Password</string>
     <string name="username">Username</string>
+    <string name="kzn_province">KZN Province</string>
+    <string name="western_cape_province">Western Cape Province</string>
+    <string name="gauteng_province">Gauteng Province</string>
+    <string name="eastern_cape_province">Eastern Cape Province</string>
+    <string name="next">Next</string>
+    <string name="profile">Profile</string>
+    <string name="scan">Scan  </string>
+    <string name="checklist">Checklist</string>
+    <string name="tripsheet">Tripsheet</string>
+    <string name="upload_p_o_d">Upload P.O.D</string>
+    <string name="report_incident">Report Incident</string>
+    <string name="technical_support">Technical Support</string>
+    <string name="navigate">Navigate</string>
+    <string name="scan_now">Scan Now</string>
 </resources>
