@@ -32,6 +32,23 @@ public class MenuScreen extends AppCompatActivity {
             }
         });
 
+        checklist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreen.this, ChecklistScreen.class);
+                startActivity(intent);
+            }
+        });
+
+        upload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuScreen.this, PodScreen.class);
+                startActivity(intent);
+            }
+        });
+
+
 
 
     }

@@ -1,131 +1,158 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
+    android:layout_height="match_parent"
     tools:context=".ProvinceScreen">
+
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#00008B">
-        <ImageView
-            android:layout_margin="9dp"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:src="@drawable/logo"/>
-        <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <androidx.appcompat.widget.Toolbar
+            android:layout_height="wrap_content"
+            android:background="#00008B">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="9dp"
+                android:src="@drawable/logo" />
+
+            <com.google.android.material.appbar.AppBarLayout
                 android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.Toolbar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#00008B"
+                    app:title="Select Provice"
+                    app:titleMarginStart="20dp"
+                    app:titleMarginTop="20dp"
+                    app:titleTextColor="@color/white" />
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="#00008B"
-                app:titleMarginStart="20dp"
-                app:titleMarginTop="20dp"
-                app:title="Select Provice"
-                app:titleTextColor="@color/white"/>
+                android:orientation="horizontal">
 
-        </com.google.android.material.appbar.AppBarLayout>
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/east" />
 
+                <CheckBox
+                    android:id="@+id/eastern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="@string/eastern_cape_province" />
+            </LinearLayout>
 
-    </LinearLayout>
+        </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/east"/>
-            <CheckBox
-                android:id="@+id/eastern"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:text="@string/eastern_cape_province"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/spain" />
+
+                <CheckBox
+                    android:id="@+id/spain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="@string/gauteng_province" />
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/spain"/>
-            <CheckBox
-                android:id="@+id/spain"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:text="@string/gauteng_province"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/kzn" />
+
+                <CheckBox
+                    android:id="@+id/kzn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="@string/kzn_province" />
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical">
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/kzn"/>
-            <CheckBox
-                android:id="@+id/kzn"
+            android:layout_marginStart="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:text="@string/kzn_province"/>
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/westencape" />
+
+                <CheckBox
+                    android:id="@+id/western"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:text="@string/western_cape_province" />
+            </LinearLayout>
+
         </LinearLayout>
 
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        android:orientation="vertical">
-        <LinearLayout
+        <Button
+            android:id="@+id/next_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/westencape"/>
-            <CheckBox
-                android:id="@+id/western"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:text="@string/western_cape_province"/>
-        </LinearLayout>
-
+            android:layout_gravity="center_horizontal"
+            android:backgroundTint="#00008B"
+            android:text="@string/next" />
     </LinearLayout>
-    <Button
-        android:id="@+id/next_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#00008B"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/next"/>
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

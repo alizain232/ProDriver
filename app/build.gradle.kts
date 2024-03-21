@@ -8,7 +8,7 @@ android {
 
     defaultConfig {
         applicationId = "com.promedtechnologies.prodriver"
-        minSdk = 24
+        minSdk = 29
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -41,5 +41,7 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     implementation("com.google.zxing:core:3.4.1")
     implementation("com.journeyapps:zxing-android-embedded:4.3.0")
+    implementation ("com.intuit.sdp:sdp-android:1.1.0")
+    implementation ("com.intuit.ssp:ssp-android:1.1.0")
 
 }

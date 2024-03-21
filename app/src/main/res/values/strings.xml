@@ -18,4 +18,7 @@
     <string name="technical_support">Technical Support</string>
     <string name="navigate">Navigate</string>
     <string name="scan_now">Scan Now</string>
+    <string name="capture_checklist">Capture Checklist</string>
+    <string name="upload">Upload</string>
+    <string name="todo">TODO</string>
 </resources>
